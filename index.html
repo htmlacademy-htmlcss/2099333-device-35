@@ -5,6 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="img/png" href="images/favicon.png" sizes="32х32">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -41,7 +42,7 @@
         <div class="navigation-button">
           <label class="navigation-link">
             Каталог товаров
-            <button type="button" class="">
+            <button type="button" class="button">
               <img class="products-menu" alt="Кнопка открытия каталога товаров." src="images/header/catalog-button.svg" height="50" width="50">
             </button>
           </label>
@@ -80,15 +81,54 @@
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующее фото.</span>
         </button>
-        <p class="">Порхает как бабочка,жалит как пчела!</p>
+        <p class="product-announcement">Порхает как бабочка,жалит как пчела!</p>
         <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="more" href="">Подробнее</a>
+        <a class="button more-button" href="#">Подробнее</a>
         <dl class="product-features">
           <dt>Дальность полета</dt>
           <dd>800 м</dd>
 
           <dt>Радиус поражения</dt>
           <dd>50 м</dd>
+        </dl>
+        <p class="product-namber">02</p>
+        <img class="slider-image" src="images/main/slider-image-2.png" alt="Умные часы." height="560" width="560">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото.</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото.</span>
+        </button>
+        <p class="product-announcement">Худеем
+          правильно!</p>
+        <p class="product-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+        <a class="button more-button" href="#">Подробнее</a>
+        <dl class="product-features">
+          <dt>Без подзарядки</dt>
+          <dd>48 часов</dd>
+        </dl>
+        <p class="product-namber">03</p>
+        <img class="slider-image" src="images/main/slider-image-3.png" alt="Три раскладные селфи-палки с ремнем." height="560" width="560">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото.</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото.</span>
+        </button>
+        <p class="product-announcement">Делай селфи,
+          как Бен Стиллер!</p>
+        <p class="product-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+        </p>
+        <a class="button more-button" href="#">Подробнее</a>
+        <dl class="product-features">
+          <dt>Длина палки</dt>
+          <dd>8,5 м</dd>
+
+          <dt>Вес палки</dt>
+          <dd>5 кг</dd>
+
+          <dt>Материал</dt>
+          <dd>Карбон</dd>
         </dl>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -141,7 +181,7 @@
         <h2 class="visually-hidden">Список услуг.</h2>
         <ul class="services-list">
           <li class="services-item">
-            <button type="button" class="button">Доставка</button>
+            <button type="button" class="button delivery-button">Доставка</button>
             <h3 class="services-name">Доставка</h3>
             <p class="services-description">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
@@ -150,7 +190,7 @@
             <img class="img" alt="Курьер с послыкой." src="images/main/delivery.svg" height="164" width="136">
           </li>
           <li class="services-item">
-            <button type="button" class="button">Гарантия</button>
+            <button type="button" class="button guarantee-button">Гарантия</button>
             <h3 class="services-name">Гарантия</h3>
             <p class="services-description">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
@@ -159,7 +199,7 @@
             <img class="img" alt="Объясняют условия гарантии по телефону." src="images/main/guarantee.svg" height="195" width="171">
           </li>
           <li class="services-item">
-            <button type="button" class="button">Кредит</button>
+            <button type="button" class="button credit-button">Кредит</button>
             <h3 class="services-name">Кредит</h3>
             <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
                наиболее выгодные условия кредита. Выгодные для банка, разумеется.
@@ -175,7 +215,7 @@
         <img calss="delivery-image" alt="Круг с буквой i внутри." src="images/main/information.svg" height="12" width="2">
       </section>
       <section class="about">
-        <h2>О нас</h2>
+        <h2 class="about-title">О нас</h2>
         <ul class="about-list">
           <li class="about-item">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -195,7 +235,7 @@
             </ul>
           </li>
         </ul>
-        <a class="button" href="">Подробнее о нас</a>
+        <a class="button about-link" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
@@ -211,7 +251,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button contact-button" href="">Напишите нам</a>
+        <a class="button contact-link" href="">Напишите нам</a>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь
@@ -219,7 +259,6 @@
         <p class="subscribe-details">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <p class="subscribe-details">Это бесплатно</p>
-        <img class="subscribe-image" alt="Зедленая галочка." src="images/main/check-mark.svg" height="14" width="14">
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -241,13 +280,13 @@
         <h2 class="visually-hidden">Услуги и Контакты.</h2>
         <ul class="footer-navigation-services-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link navigation-footer" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link navigation-footer" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="navigation-link navigation-footer" href="#">Контакты</a>
           </li>
         </ul>
       </section>
@@ -272,7 +311,7 @@
         </ul>
       </section>
       <address class="footer-contacts">
-        <a class="contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
       </address>
       <a class="footer-logo" href="https://htmlacademy.ru/">
         <img src="images/footer/html-academi-logo.svg" alt="Логотиип htmlacademy." class="htmlacademy-logo" height="32.9" width="114.9">
