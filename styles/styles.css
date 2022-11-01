@@ -21,12 +21,87 @@
 }
 
 body {
+ display: flex;
+ flex-direction: column;
+ min-height: 100%;
  font-family: "Rubik", sans-serif;
  font-weight: 400;
  font-size: 18px;
  line-height: 30px;
+ margin: 0;
  background-color: #FFFFFF;
  color: #444444;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-left: 60px;
+}
+
+.user-menu {
+  display: flex;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  max-width: 480px;
+  margin-right: 60px;
+  margin-left: auto;
+}
+
+.search-form {
+  width: 517px;
+  margin-left: 60px;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.navigation-button {
+  width: 293px;
+  margin-left: 60px;
+}
+
+.navigation-services {
+  margin: 0;
+  padding: 0;
+  max-width: 471px;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-column1 {
+  width: 560px;
+}
+
+.slider-column2 {
+  width: 560px;
 }
 
 .navigation-link {
@@ -50,6 +125,7 @@ body {
 .menu-list{
   background-color: #FFE17F;
 }
+
 .menu-link {
   font-size: 16px;
   line-height: 18px;
@@ -58,14 +134,48 @@ body {
   text-decoration: none;
 }
 
-.products-slider {
+.product-namber {
+  font-weight: 800;
+  font-size: 180px;
+  color: #FFFFFF;
+  text-align: right;
   background-color: #FFE17F;
 }
 
-.product-namber {
-  font-size: 110px;
-  color: #FFFFFF;
-  text-align: right;
+.product-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item {
+  height: 253px;
+  width: 160px;
+}
+
+.product-1 {
+  padding: 54px 31.05px 51.01px 32px;
+}
+
+.product-2 {
+  padding: 44px 36.99px 1px 37.14px;
+}
+
+.product-3 {
+  padding: 37px 44.98px 36px 44px;
+}
+
+.product-4 {
+  padding: 47.86px 26.69px 47.15px 26px;
+}
+
+.product-5 {
+  padding: 32px 51.99px 30.02px 52px;
+}
+
+.product-6 {
+  padding: 46px 13.97px 44.99px 14px;
 }
 
 .product-announcement {
@@ -343,4 +453,8 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+html {
+  height: 100%;
 }
