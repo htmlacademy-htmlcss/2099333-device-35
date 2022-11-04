@@ -10,7 +10,7 @@
   <body>
     <header class="page-header inner-page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="">
+        <a class="navigation-logo" href="index.html">
           <img
             class="page-header-logo"
             alt="Логотиип магазина Devise."
@@ -30,34 +30,23 @@
           </form>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="">Коля Петухов</a>
+              <a class="navigation-link" href="#">Коля Петухов</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Войти</a>
+              <a class="navigation-link" href="#">Войти</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Сравнить</a>
+              <a class="navigation-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Корзина</a>
+              <a class="navigation-link" href="#">Корзина</a>
             </li>
           </ul>
         </div>
         <div class="main-menu">
-          <div class="navigation-button">
-            <label class="navigation-link">
-              Каталог товаров
-              <button type="button" class="button">
-                <img
-                  class="products-menu"
-                  alt="Кнопка открытия каталога товаров."
-                  src="images/header/catalog-button.svg"
-                  height="50"
-                  width="50"
-                />
-              </button>
-            </label>
-          </div>
+          <button type="button" class="button navigation-button">
+            Каталог товаров
+          </button>
           <ul class="navigation-list navigation-services">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка</a>
@@ -75,7 +64,7 @@
             <a class="menu-link" href="#">Виртуальная реальность</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="catalog.html">Моноподы для селфи</a>
+            <a class="menu-link" href="#">Моноподы для селфи</a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#">Экшн-камеры</a>
@@ -216,7 +205,7 @@
             </a>
             <ul class="catalog-list">
               <li class="product-card">
-                <a href="" class="product-card-link">
+                <a href="#" class="product-card-link">
                   <img
                     src="images/catalog/catalog-1.jpg"
                     alt="Раскладная селфи-палка с креплением для телефона."
@@ -229,7 +218,7 @@
                 <b class="product-card-price">500 ₽</b>
               </li>
               <li class="product-card">
-                <a href="" class="product-card-link">
+                <a href="#" class="product-card-link">
                   <img
                     src="images/catalog/catalog-2.jpg"
                     alt="Селфи-палка с конпкой,дополнительными креплениями и гироскопом."
@@ -244,7 +233,7 @@
                 <b class="product-card-price">1500 ₽</b>
               </li>
               <li class="product-card">
-                <a href="" class="product-card-link">
+                <a href="#" class="product-card-link">
                   <img
                     src="images/catalog/catalog-3.jpg"
                     alt="Короткая селфи-палка с креплением для экшн-камеры с желтыми вставками,прорезиненой ручкой и ремнем."
@@ -257,7 +246,7 @@
                 <b class="product-card-price">2500 ₽</b>
               </li>
               <li class="product-card">
-                <a href="" class="product-card-link">
+                <a href="#" class="product-card-link">
                   <img
                     src="images/catalog/catalog-4.jpg"
                     alt="Селфи-палка в виде руки с креплением для телефона."
@@ -349,12 +338,7 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a href="https://t.me/htmlacademy" class="button">
-                  <img
-                    src="images/footer/social-1.svg"
-                    alt="Telegram."
-                    height="11.19"
-                    width="13.34"
-                  />
+                  <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
@@ -362,22 +346,12 @@
                   href="https://www.youtube.com/user/htmlacademyru"
                   class="button"
                 >
-                  <img
-                    src="images/footer/social-2.svg"
-                    alt="Youtube."
-                    height="10.67"
-                    width="16"
-                  />
+                  <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="https://twitter.com/htmlacademy_ru" class="button">
-                  <img
-                    src="images/footer/social-3.svg"
-                    alt="Twitter."
-                    height="14.06"
-                    width="15"
-                  />
+                  <span class="visually-hidden">Twitter</span>
                 </a>
               </li>
             </ul>
@@ -385,8 +359,9 @@
         </div>
         <div class="footer-contacts-logo-container">
           <address class="footer-contacts">
+            <span class="visually-hidden">Контактный телефон магазина Devise</span>
             <a class="footer-contacts-address-phone" href="tel:+78128121212"
-              >Тел.:+7 (812) 812-12-12</a
+              >Тел.: +7 (812) 812-12-12</a
             >
           </address>
           <a class="footer-logo" href="https://htmlacademy.ru/">

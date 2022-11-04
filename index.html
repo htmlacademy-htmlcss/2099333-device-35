@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="">
+        <a class="navigation-logo" href="#">
           <img
             class="page-header-logo"
             alt="Логотиип магазина Devise."
@@ -30,31 +30,20 @@
           </form>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="">Войти</a>
+              <a class="navigation-link" href="#">Войти</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Сравнить</a>
+              <a class="navigation-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Корзина</a>
+              <a class="navigation-link" href="#">Корзина</a>
             </li>
           </ul>
         </div>
         <div class="main-menu">
-          <div class="navigation-button">
-            <label class="navigation-link">
-              Каталог товаров
-              <button type="button" class="button">
-                <img
-                  class="products-menu"
-                  alt="Кнопка открытия каталога товаров."
-                  src="images/header/catalog-button.svg"
-                  height="50"
-                  width="50"
-                />
-              </button>
-            </label>
-          </div>
+          <button type="button" class="button navigation-button">
+            Каталог товаров
+          </button>
           <ul class="navigation-list navigation-services">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка</a>
@@ -93,7 +82,7 @@
       <h1 class="visually-hidden">Магазин электроники Девайс.</h1>
       <section class="products-slider">
         <h2 class="visually-hidden">Галерея товаров.</h2>
-          <p class="product-namber">01</p>
+        <p class="product-namber">01</p>
         <div class="slider-conteiner">
           <div class="slider-column1">
             <img
@@ -302,13 +291,6 @@
               ваш этаж.
             </p>
           </div>
-          <img
-            class="img"
-            alt="Курьер с послыкой."
-            src="images/main/delivery.svg"
-            height="164"
-            width="136"
-          />
         </div>
         <div class="services-conteiner">
           <ul class="services-list">
@@ -329,13 +311,6 @@
               не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
             </p>
           </div>
-          <img
-            class="img"
-            alt="Объясняют условия гарантии по телефону."
-            src="images/main/guarantee.svg"
-            height="195"
-            width="171"
-          />
         </div>
         <div class="services-conteiner">
           <ul class="services-list">
@@ -357,13 +332,6 @@
               банка, разумеется.
             </p>
           </div>
-          <img
-            class="img"
-            alt="Человек несет на спине огромную кредитную карту."
-            src="images/main/credit.svg"
-            height="188"
-            width="156"
-          />
         </div>
       </section>
       <section class="delivery">
@@ -375,7 +343,7 @@
           height="31"
           width="47"
         />
-        <a class="delivery-text" href="">Доставим редкий товар под заказ</a>
+        <a class="delivery-text" href="#">Доставим редкий товар под заказ</a>
         <img
           calss="delivery-image"
           alt="Круг с буквой i внутри."
@@ -424,7 +392,7 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="button contact-link" href="">Напишите нам</a>
+          <a class="button contact-link" href="#">Напишите нам</a>
         </section>
       </div>
       <section class="subscribe">
@@ -504,12 +472,7 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a href="https://t.me/htmlacademy" class="button">
-                  <img
-                    src="images/footer/social-1.svg"
-                    alt="Telegram."
-                    height="11.19"
-                    width="13.34"
-                  />
+                  <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
@@ -517,22 +480,12 @@
                   href="https://www.youtube.com/user/htmlacademyru"
                   class="button"
                 >
-                  <img
-                    src="images/footer/social-2.svg"
-                    alt="Youtube."
-                    height="10.67"
-                    width="16"
-                  />
+                  <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="https://twitter.com/htmlacademy_ru" class="button">
-                  <img
-                    src="images/footer/social-3.svg"
-                    alt="Twitter."
-                    height="14.06"
-                    width="15"
-                  />
+                  <span class="visually-hidden">Twitter</span>
                 </a>
               </li>
             </ul>
@@ -540,8 +493,9 @@
         </div>
         <div class="footer-contacts-logo-container">
           <address class="footer-contacts">
+            <span class="visually-hidden">Контактный телефон магазина Devise</span>
             <a class="footer-contacts-address-phone" href="tel:+78128121212"
-              >Тел.:+7 (812) 812-12-12</a
+              >Тел.: +7 (812) 812-12-12</a
             >
           </address>
           <a class="footer-logo" href="https://htmlacademy.ru/">
