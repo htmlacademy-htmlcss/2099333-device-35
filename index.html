@@ -10,53 +10,55 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="#">
-          <img
-            class="page-header-logo"
-            alt="Логотиип магазина Devise."
-            src="images/header/header-logo.svg"
-            height="36"
-            width="145"
-          />
-        </a>
-        <div class="user-menu">
-          <form
-            action="https://echo.htmlacademy.ru/"
-            class="search-form"
-            method="post"
-          >
-            <input type="search" placeholder="Поиск по сайту" />
-            <button type="submit">Найти</button>
-          </form>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
-            </li>
-          </ul>
+        <div class="navigatin-container">
+          <a class="navigation-logo" href="#">
+            <img
+              class="page-header-logo"
+              alt="Логотиип магазина Devise."
+              src="images/header/header-logo.svg"
+              height="36"
+              width="145"
+            />
+          </a>
+          <div class="user-menu">
+            <form
+              action="https://echo.htmlacademy.ru/"
+              class="search-form"
+              method="post"
+            >
+              <input type="search" placeholder="Поиск по сайту" />
+              <button type="submit">Найти</button>
+            </form>
+            <ul class="navigation-list navigation-user">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Войти</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Сравнить</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-menu">
+            <button type="button" class="button navigation-button">
+              Каталог товаров
+            </button>
+            <ul class="navigation-list navigation-services">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="main-menu">
-          <button type="button" class="button navigation-button">
-            Каталог товаров
-          </button>
-          <ul class="navigation-list navigation-services">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="menu-list">
+        <ul class="menu-list disabled">
           <li class="menu-item">
             <a class="menu-link" href="#">Виртуальная реальность</a>
           </li>
@@ -82,40 +84,68 @@
       <h1 class="visually-hidden">Магазин электроники Девайс.</h1>
       <section class="products-slider">
         <h2 class="visually-hidden">Галерея товаров.</h2>
-        <p class="product-namber">01</p>
-        <div class="slider-conteiner">
-          <div class="slider-column1">
-            <img
-              class="slider-image"
-              src="images/main/slider-image-1.png"
-              alt="Квадрокоптер."
-              height="560"
-              width="560"
-            />
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото.</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото.</span>
-            </button>
-          </div>
-          <div class="slider-column2">
-            <p class="product-announcement">
-              Порхает как бабочка,жалит как пчела!
-            </p>
-            <p class="product-description">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-              лазером, замаскированным под стандартную камеру.
-            </p>
-            <a class="button more-button" href="#">Подробнее</a>
-            <dl class="product-features">
-              <dt>Дальность полета</dt>
-              <dd>800 м</dd>
+        <div class="product-namber-container">
+          <p class="product-namber">01</p>
+        </div>
+        <div class="main-slider-conteiner">
+          <div class="slider-conteiner">
+            <div class="slider-column1">
+              <img
+                class="slider-image"
+                src="images/main/slider-image-1.png"
+                alt="Квадрокоптер."
+                height="560"
+                width="560"
+              />
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото.</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото.</span>
+              </button>
+            </div>
+            <div class="slider-column2">
+              <p class="product-announcement">
+                Порхает как бабочка, жалит как пчела!
+              </p>
+              <p class="product-description">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="button more-button" href="#">Подробнее</a>
+              <dl class="product-features">
+                <div class="column1">
+                  <dt>Дальность полета</dt>
+                  <dd>800 м</dd>
+                </div>
 
-              <dt>Радиус поражения</dt>
-              <dd>50 м</dd>
-            </dl>
+                <div class="column2">
+                  <dt>Радиус поражения</dt>
+                  <dd>50 м</dd>
+                </div>
+              </dl>
+            </div>
           </div>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-button-current"
+                type="button"
+              >
+                <span class="visually-hidden">Первый товар.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">Второй товар.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">Третий товар.</span>
+              </button>
+            </li>
+          </ol>
         </div>
         <!-- <p class="product-namber">02</p>
         <div class="slider-conteiner">
@@ -183,26 +213,6 @@
             </dl>
           </div>
         </div> -->
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button
-              class="slider-pagination-button slider-pagination-button-current"
-              type="button"
-            >
-              <span class="visually-hidden">Первый товар.</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">Второй товар.</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">Третий товар.</span>
-            </button>
-          </li>
-        </ol>
       </section>
       <section class="product">
         <h2 class="visually-hidden">Виды товаров.</h2>
@@ -287,8 +297,7 @@
             <h3 class="services-name">Доставка</h3>
             <p class="services-description">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
-              ваш этаж.
+              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </div>
         </div>
@@ -394,9 +403,7 @@
           <div class="subscribe-text-conteiner">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-details">
-              Еженедельный дайджест с обзорами новинок, длительными
-              тест-драйвами, распаковками, а также акции, спецпредложения и вот
-              это вот всё.
+              Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
             </p>
           </div>
           <div class="subscribe-form-container">
@@ -466,7 +473,7 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a href="https://t.me/htmlacademy" class="button">
-                  <span class="visually-hidden">Telegram</span>
+                  <span class="visually-hidden">Telegram.</span>
                 </a>
               </li>
               <li class="footer-social-item">
@@ -474,12 +481,15 @@
                   href="https://www.youtube.com/user/htmlacademyru"
                   class="button"
                 >
-                  <span class="visually-hidden">Youtube</span>
+                  <span class="visually-hidden">Youtube.</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="https://twitter.com/htmlacademy_ru" class="button footer-social-button">
-                  <span class="visually-hidden">Twitter</span>
+                <a
+                  href="https://twitter.com/htmlacademy_ru"
+                  class="button footer-social-button"
+                >
+                  <span class="visually-hidden">Twitter.</span>
                 </a>
               </li>
             </ul>
@@ -487,7 +497,9 @@
         </div>
         <div class="footer-contacts-logo-container">
           <address class="footer-contacts">
-            <span class="visually-hidden">Контактный телефон магазина Devise</span>
+            <span class="visually-hidden"
+              >Контактный телефон магазина Devise.</span
+            >
             <a class="footer-contacts-address-phone" href="tel:+78128121212"
               >Тел.: +7 (812) 812-12-12</a
             >

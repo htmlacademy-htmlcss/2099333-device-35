@@ -10,56 +10,55 @@
   <body>
     <header class="page-header inner-page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img
-            class="page-header-logo"
-            alt="Логотиип магазина Devise."
-            src="images/header/header-logo.svg"
-            height="36"
-            width="145"
-          />
-        </a>
-        <div class="user-menu">
-          <form
-            action="https://echo.htmlacademy.ru/"
-            class="search-form"
-            method="post"
-          >
-            <input type="search" placeholder="Поиск по сайту" />
-            <button type="submit">Найти</button>
-          </form>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Коля Петухов</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
-            </li>
-          </ul>
+        <div class="navigatin-container">
+          <a class="navigation-logo" href="index.html">
+            <img
+              class="page-header-logo"
+              alt="Логотиип магазина Devise."
+              src="images/header/header-logo.svg"
+              height="36"
+              width="145"
+            />
+          </a>
+          <div class="user-menu">
+            <form
+              action="https://echo.htmlacademy.ru/"
+              class="search-form"
+              method="post"
+            >
+              <input type="search" placeholder="Поиск по сайту" />
+              <button type="submit">Найти</button>
+            </form>
+            <ul class="navigation-list navigation-user">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Войти</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Сравнить</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-menu">
+            <button type="button" class="button navigation-button">
+              Каталог товаров
+            </button>
+            <ul class="navigation-list navigation-services">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="main-menu">
-          <button type="button" class="button navigation-button">
-            Каталог товаров
-          </button>
-          <ul class="navigation-list navigation-services">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="menu-list">
+        <ul class="menu-list disabled">
           <li class="menu-item">
             <a class="menu-link" href="#">Виртуальная реальность</a>
           </li>
@@ -191,18 +190,20 @@
             </form>
           </div>
           <div class="catalog-right-column">
-            <h3 class="filter-title">Сортировка:</h3>
-            <select class="select-control">
-              <option value="popular">Популярные</option>
-              <option value="cheap">Дешёвые</option>
-              <option value="expensive">Дорогие</option>
-            </select>
-            <a href="#" class="button">
-              <span class="visually-hidden">По возрастанию.</span>
-            </a>
-            <a class="button" href="#">
-              <span class="visually-hidden">По убыванию.</span>
-            </a>
+            <div class="sorting-container">
+              <h3 class="filter-title">Сортировка:</h3>
+              <select class="select-control">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешёвые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+              <a href="#" class="button">
+                <span class="visually-hidden">По возрастанию.</span>
+              </a>
+              <a href="#" class="button">
+                <span class="visually-hidden">По убыванию.</span>
+              </a>
+            </div>
             <ul class="catalog-list">
               <li class="product-card">
                 <a href="#" class="product-card-link">
@@ -269,23 +270,21 @@
                 </a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
+                <a class="pagination-link pagination-page pagination-current"
+                  >1</a
+                >
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
+                <a class="pagination-link pagination-page" href="#">2</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
+                <a class="pagination-link pagination-page" href="#">3</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">
-                  <span class="visually-hidden"
-                    >Загрузить следующее три страницы.</span
-                  >
-                </a>
+                <a class="pagination-link pagination-page" href="#"> ... </a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">15</a>
+                <a class="pagination-link pagination-page" href="#">15</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link pagination-next" href="#"> Вперёд </a>
@@ -338,7 +337,7 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a href="https://t.me/htmlacademy" class="button">
-                  <span class="visually-hidden">Telegram</span>
+                  <span class="visually-hidden">Telegram.</span>
                 </a>
               </li>
               <li class="footer-social-item">
@@ -346,12 +345,12 @@
                   href="https://www.youtube.com/user/htmlacademyru"
                   class="button"
                 >
-                  <span class="visually-hidden">Youtube</span>
+                  <span class="visually-hidden">Youtube.</span>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="https://twitter.com/htmlacademy_ru" class="button">
-                  <span class="visually-hidden">Twitter</span>
+                  <span class="visually-hidden">Twitter.</span>
                 </a>
               </li>
             </ul>
@@ -359,7 +358,9 @@
         </div>
         <div class="footer-contacts-logo-container">
           <address class="footer-contacts">
-            <span class="visually-hidden">Контактный телефон магазина Devise</span>
+            <span class="visually-hidden"
+              >Контактный телефон магазина Devise</span
+            >
             <a class="footer-contacts-address-phone" href="tel:+78128121212"
               >Тел.: +7 (812) 812-12-12</a
             >
