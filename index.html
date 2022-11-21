@@ -44,24 +44,38 @@
               class="search-form"
               method="post"
             >
-              <input type="search" placeholder="Поиск по сайту" />
-              <button type="submit">Найти</button>
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                class="search-icone"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7 15.0024L12.6 11.9024C13.5 10.7024 14 9.30239 14 7.70239C14 3.80239 10.9 0.702393 7 0.702393C3.1 0.702393 0 3.80239 0 7.70239C0 11.6024 3.1 14.7024 7 14.7024C8.6 14.7024 10 14.2024 11.2 13.3024L14.3 16.4024C14.5 16.6024 14.7 16.7024 15 16.7024C15.6 16.7024 16 16.3024 16 15.7024C16 15.5024 15.9 15.2024 15.7 15.0024ZM2 7.70239C2 4.90239 4.2 2.70239 7 2.70239C9.8 2.70239 12 4.90239 12 7.70239C12 10.5024 9.8 12.7024 7 12.7024C4.2 12.7024 2 10.5024 2 7.70239Z"
+                />
+              </svg>
+              <input
+                type="search"
+                class="search-input"
+                placeholder="Поиск по сайту"
+              />
+              <button class="search-button" type="submit">Найти</button>
             </form>
             <ul class="navigation-list navigation-login">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
                   <svg
+                    class="user-icone"
                     aria-hidden="true"
                     focusable="false"
                     width="13"
                     height="12"
                     viewBox="0 0 13 12"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z"
-                      fill="black"
                     />
                   </svg>
                   <span class="navigation-user-text">Войти</span>
@@ -72,22 +86,22 @@
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
                   <svg
+                    class="user-icone"
                     aria-hidden="true"
                     focusable="false"
                     width="10"
                     height="12"
                     viewBox="0 0 10 12"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g clip-path="url(#clip0_30061_579)">
-                      <path d="M6 0H4V12H6V0Z" fill="black" />
-                      <path d="M2 4H0V12H2V4Z" fill="black" />
-                      <path d="M10 3H8V12H10V3Z" fill="black" />
+                      <path d="M6 0H4V12H6V0Z"/>
+                      <path d="M2 4H0V12H2V4Z"/>
+                      <path d="M10 3H8V12H10V3Z"/>
                     </g>
                     <defs>
                       <clipPath id="clip0_30061_579">
-                        <rect width="10" height="12" fill="white" />
+                        <rect width="10" height="12">
                       </clipPath>
                     </defs>
                   </svg>
@@ -97,17 +111,16 @@
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
                   <svg
+                    class="user-icone"
                     aria-hidden="true"
                     focusable="false"
                     width="16"
                     height="14"
                     viewBox="0 0 16 14"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
-                      fill="black"
                     />
                   </svg>
                   <span class="navigation-user-text">Корзина</span>
@@ -171,12 +184,34 @@
                 height="560"
                 width="560"
               />
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущее фото.</span>
-              </button>
-              <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующее фото.</span>
-              </button>
+              <div class="slider-controls">
+                <button class="slider-button slider-prev" type="button">
+                  <svg
+                    width="20"
+                    height="60"
+                    viewBox="0 0 20 60"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Предыдущее фото.</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <svg
+                    width="20"
+                    height="60"
+                    viewBox="0 0 20 60"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Следующее фото.</span>
+                </button>
+              </div>
             </div>
             <div class="slider-column2">
               <p class="product-announcement">
@@ -626,8 +661,8 @@
             xmlns="http://www.w3.org/2000/svg"
           >
             <g clip-path="url(#clip0_30061_30)">
-              <path d="M2 0H0V2H2V0Z"/>
-              <path d="M2 4H0V12H2V4Z"/>
+              <path d="M2 0H0V2H2V0Z" />
+              <path d="M2 4H0V12H2V4Z" />
             </g>
             <defs>
               <clipPath id="clip0_30061_30">
@@ -698,13 +733,11 @@
               action="https://echo.htmlacademy.ru/"
               method="post"
             >
-              <label for="newsletter-email">Email</label>
               <input
                 class="field"
                 placeholder="Ваш e-mail"
                 type="email"
                 name="newsletter-email"
-                id="newsletter-email"
                 required
               />
               <button class="button newsletter-button" type="submit">
